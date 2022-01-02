@@ -1,0 +1,83 @@
+.faq {
+  padding: 150px 0;
+  background: #fafafa;
+
+  @media (max-width: 800px) {
+    padding: 50px 0;
+  }
+  // .faq__container
+
+  &__container {
+  }
+
+  // .faq__header
+
+  &__header {
+    text-align: center;
+  }
+
+  // .faq__title
+
+  &__title {
+    @include fonts($font-name, 42px, 50px, 400, #000);
+    margin-bottom: 35px;
+  }
+
+  // .faq__text
+
+  &__text {
+    @include fonts($font-name, 13px, 30px, 400, #737373);
+    margin-bottom: 50px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 35px;
+    }
+  }
+
+  // .faq__text-link
+
+  &__text-link {
+    color: #0a8bfe;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // .faq__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .faq__item
+
+  &__item {
+  }
+
+  // .faq__link
+
+  &__link {
+    @include fonts($font-name, 20px, 24px, 400, #000);
+    display: block;
+    box-sizing: border-box;
+    padding: 38px 35px 38px 0;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('../img/icons/plus.svg');
+    }
+  }
+}
+.container {
+}

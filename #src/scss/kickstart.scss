@@ -1,0 +1,123 @@
+.main {
+  // .main__kickstart
+
+  &__kickstart {
+  }
+}
+.kickstart {
+  padding: 150px 0 100px;
+
+  @media (max-width: 800px) {
+    padding: 50px 0;
+  }
+
+  // .kickstart__header
+
+  &__header {
+    text-align: center;
+  }
+
+  // .kickstart__title
+
+  &__title {
+    @include fonts($font-name, 41px, 50px, 400, #000);
+    margin-bottom: 35px;
+  }
+
+  // .kickstart__text
+
+  &__text {
+    @include fonts($font-name, 11px, 30px, 400, #737373);
+    margin-bottom: 35px;
+  }
+
+  // .kickstart__swiper
+
+  &__swiper {
+    height: 140px;
+  }
+
+  // .kickstart__slide
+
+  &__slide {
+    border: 2px solid #e8e8e8;
+    height: 62px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .kickstart__slide-link
+
+  &__slide-link {
+    padding: 16px 0;
+    @include fonts($font-name, 15px, 30px, 400, #0a8bfe);
+
+    &::hover {
+      text-decoration: underline;
+    }
+  }
+
+  // .kickstart__button-prev
+
+  &__button-prev {
+    width: 60px;
+    left: 141px;
+    top: 30px;
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('../img/icons/prev.svg');
+      background-position: center;
+      background-size: cover;
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: 1000px) {
+      left: 50px;
+    }
+    @media (max-width: 600px) {
+      top: 100px;
+      left: 100px;
+    }
+  }
+
+  // .kickstart__button-next
+
+  &__button-next {
+    width: 60px;
+    right: 141px;
+    top: 30px;
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('../img/icons/next.svg');
+      background-position: center;
+      background-size: cover;
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: 1000px) {
+      right: 50px;
+    }
+    @media (max-width: 600px) {
+      top: 100px;
+      right: 100px;
+    }
+  }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}

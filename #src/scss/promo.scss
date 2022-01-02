@@ -1,0 +1,43 @@
+.promo {
+  box-sizing: border-box;
+  background-image: url('../img/title/title-bg@2.jpg');
+
+	@supports (-webkit-appearance:none){
+    .banner {
+        background-image: url('../img/title/title-bg@2.webp');
+    }
+}
+  background-size: cover;
+  background-position: top;
+  padding: 240px 0 270px;
+  min-height: 800px;
+  // .promo__container
+
+  &__container {
+    padding: 0 15px;
+  }
+
+  // .promo__body
+
+  &__body {
+  }
+
+  // .promo__title
+
+  &__title {
+    margin: 0 0 35px 0;
+  }
+
+  // .promo__text
+
+  &__text {
+    max-width: 420px;
+    @include fonts($font-name, 11px, 30px, 400, #fff);
+    margin-bottom: 35px;
+  }
+
+  // .promo__button
+
+  &__button {
+  }
+}

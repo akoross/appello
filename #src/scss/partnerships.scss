@@ -1,0 +1,68 @@
+.partnerships {
+  padding: 15px 0;
+  // .partnerships__container
+
+  &__container {
+  }
+
+  // .partnerships__header
+
+  &__header {
+  }
+
+  // .partnerships__title
+
+  &__title {
+    @include fonts($font-name, 42px, 50px, 400, #000);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  // .partnerships__body
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+    column-gap: 23px;
+    row-gap: 30px;
+
+    @media (max-width: 366px) {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      column-gap: 0;
+      row-gap: 35px;
+    }
+  }
+
+  // .partnerships__card
+
+  &__card {
+    background: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0px;
+    padding: 30px 25px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  // .partnerships__card-develop
+
+  &__card-develop {
+    @include fonts($font-name, 15px, 30px, 400, #737373);
+  }
+
+  // .partnerships__card-name
+
+  &__card-name {
+    @include fonts($font-name, 20px, 28px, 400, #000);
+    margin-bottom: auto;
+  }
+
+  // .partnerships__card-image
+
+  &__card-image {
+    align-self: flex-end;
+  }
+}
+.container {
+}

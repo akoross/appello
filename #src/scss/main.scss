@@ -1,0 +1,51 @@
+.main {
+  // .main__promo
+
+  &__promo {
+  }
+
+  // .main__advantages
+
+  &__advantages {
+  }
+
+  // .main__stage
+
+  &__stage {
+  }
+
+  // .main__relationships
+
+  &__relationships {
+  }
+
+  // .main__partnerships
+
+  &__partnerships {
+  }
+
+  // .main__callback
+
+  &__callback {
+    margin-bottom: 150px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  // .main__approved
+
+  &__approved {
+  }
+
+  // .main__resources
+
+  &__resources {
+  }
+
+  // .main__faq
+
+  &__faq {
+  }
+}

@@ -1,0 +1,132 @@
+.stage {
+  padding: 110px 0 150px;
+
+  @media (max-width: 561px) {
+    padding: 20px 0 40px;
+  }
+  // .stage__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .stage__header
+
+  &__header {
+    align-self: center;
+    text-align: center;
+    margin-bottom: 85px;
+
+    @media (max-width: 561px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  // .stage__title
+
+  &__title {
+    @include fonts($font-name, 41px, 50px, 400, #000);
+    margin-bottom: 35px;
+  }
+
+  // .stage__text
+
+  &__text {
+    @include fonts($font-name, 12px, 30px, 400, #737373);
+  }
+
+  // .stage__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .stage__links
+
+  &__links {
+    align-self: center;
+    margin-bottom: 50px;
+
+    @media (max-width: 561px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  // .stage__link
+
+  &__link {
+    @include fonts($font-name, 23px, 38px, 400, #000);
+    display: inline-block;
+    margin-right: 100px;
+
+    @media (max-width: 561px) {
+      margin-right: 20px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    // ._active
+
+    &._active {
+      color: #0a8bfe;
+    }
+
+    &:hover {
+      color: #0a8bfe;
+    }
+  }
+
+  // .stage__cards
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+
+    @media (max-width: 561px) {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+  }
+
+  // .stage__card
+
+  &__card {
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    border-radius: 0px;
+    padding: 40px;
+  }
+
+  // .stage__card-title
+
+  &__card-title {
+    @include fonts($font-name, 19px, 28px, 400, #000);
+    margin-bottom: 23px;
+  }
+
+  // .stage__card-text
+
+  &__card-text {
+    @include fonts($font-name, 16px, 30px, 400, #737373);
+  }
+
+  // .stage__button
+
+  &__button {
+    align-self: center;
+    max-width: max-content;
+  }
+}
+.container {
+}
+.text {
+}
+.btn {
+}
