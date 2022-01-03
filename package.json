@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "description": "PET Project Appello",
   "main": "index.html",
-  "homepage": "https://akoross.github.io/appello",
   "scripts": {
     "start": "gulp",
     "build": "npm run build",
     "fonts": "gulp fontsStyle",
-    "sprite": "gulp svg_sprite",
-		"predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "sprite": "gulp svg_sprite"
   },
   "author": "Sergii Soroka",
   "license": "ISC",
@@ -19,7 +16,6 @@
     "browser-sync": "^2.27.5",
     "del": "^6.0.0",
     "fs": "0.0.1-security",
-    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",

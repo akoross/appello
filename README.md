@@ -1,4 +1,4 @@
-# Test Task
+# Appello
 
 ## _Sergii Soroka_
 
@@ -10,6 +10,5 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 npm i
-gulp svg_sprite
 npm start
 ```
